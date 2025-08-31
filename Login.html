@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>KuduVest — Login / Sign up</title>
+  <link rel="stylesheet" href="/styles.css">
+  <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-auth-compat.js"></script>
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="brand-placeholder"></div>
+      <nav class="nav"><a class="link" href="/index.html">Home</a></nav>
+    </header>
+
+    <main class="grid">
+      <section>
+        <div class="card">
+          <h2 class="h1">Login</h2>
+          <form id="loginForm">
+            <div class="field"><input id="login-email" class="input" placeholder="Email" required /></div>
+            <div class="field"><input type="password" id="login-password" class="input" placeholder="Password" required /></div>
+            <div style="margin-top:10px"><button class="btn" type="submit">Login</button></div>
+          </form>
+        </div>
+
+        <div class="card" style="margin-top:12px">
+          <h2 class="h1">Sign up</h2>
+          <form id="registerForm">
+            <div class="field"><input id="reg-email" class="input" placeholder="Email" required /></div>
+            <div class="field"><input id="reg-username" class="input" placeholder="Username" required /></div>
+            <div class="field"><input id="reg-phone" class="input" placeholder="Phone (incl. country code)" value="+27" required /></div>
+            <div class="field"><input id="reg-password" class="input" type="password" placeholder="Password" required /></div>
+            <div style="margin-top:10px"><button class="btn" type="submit">Create account</button></div>
+          </form>
+        </div>
+      </section>
+
+      <aside>
+        <div class="card">
+          <h4>Need help?</h4>
+          <p class="small">Contact: <span class="kv-contact"></span></p>
+          <p class="small">By creating an account you agree to Terms. KuduVest demo does not provide guaranteed returns.</p>
+        </div>
+      </aside>
+    </main>
+
+    <footer class="footer">Contact <span class="kv-contact"></span> • © KuduVest <span class="kv-year"></span></footer>
+  </div>
+
+  <script src="/firebase-config.js"></script>
+  <script src="/app.js"></script>
+</body>
+              </html>
